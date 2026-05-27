@@ -101,7 +101,7 @@ def make_worldmap():
     affiliations = add_countries_column(affiliations)
     affiliations = clean_countries(affiliations)
     countries = count_country_frequency(affiliations)
-    countries.to_csv("files/countries.csv")
+    countries.to_csv("files/output/countries.csv")
     plot_world_map(countries)
 
 
